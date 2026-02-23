@@ -42,7 +42,7 @@ export default function RecentActivities() {
                                 />
                             </div>
                             <div className="p-6">
-                                <p className="text-sm text-blue-600 font-semibold mb-2">{activity.date}</p>
+                                <p className="text-sm text-red-600 font-semibold mb-2">{activity.date}</p>
                                 <h3 className="text-xl font-semibold mb-3 text-gray-900">{activity.title}</h3>
                                 <p className="text-gray-600 mb-4 leading-relaxed">{activity.description}</p>
                                 <Link href="/training" className="btn-primary text-sm">
@@ -56,3 +56,4 @@ export default function RecentActivities() {
         </section>
     )
 }
+

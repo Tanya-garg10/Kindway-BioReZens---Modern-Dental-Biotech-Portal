@@ -13,7 +13,7 @@ export default function TrainingPage() {
     return (
         <div className="mt-20">
             {/* Hero */}
-            <section className="bg-gradient-to-r from-purple-600 to-purple-800 text-white py-20">
+            <section className="bg-gradient-to-r from-red-600 to-red-800 text-white py-20">
                 <div className="container-custom text-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Training & Workshops</h1>
                     <p className="text-xl max-w-3xl mx-auto opacity-90">
@@ -37,19 +37,19 @@ export default function TrainingPage() {
                             </p>
                             <div className="grid grid-cols-2 gap-4 mb-6">
                                 <div className="flex items-center space-x-3">
-                                    <Users className="w-6 h-6 text-blue-600" />
+                                    <Users className="w-6 h-6 text-red-600" />
                                     <span className="text-gray-700">Expert Faculty</span>
                                 </div>
                                 <div className="flex items-center space-x-3">
-                                    <Award className="w-6 h-6 text-blue-600" />
+                                    <Award className="w-6 h-6 text-red-600" />
                                     <span className="text-gray-700">Certification</span>
                                 </div>
                                 <div className="flex items-center space-x-3">
-                                    <Calendar className="w-6 h-6 text-blue-600" />
+                                    <Calendar className="w-6 h-6 text-red-600" />
                                     <span className="text-gray-700">Flexible Dates</span>
                                 </div>
                                 <div className="flex items-center space-x-3">
-                                    <Download className="w-6 h-6 text-blue-600" />
+                                    <Download className="w-6 h-6 text-red-600" />
                                     <span className="text-gray-700">Course Materials</span>
                                 </div>
                             </div>
@@ -92,19 +92,19 @@ export default function TrainingPage() {
                             <h3 className="text-2xl font-semibold mb-4">Comprehensive Learning Experience</h3>
                             <ul className="space-y-3 mb-6">
                                 <li className="flex items-start space-x-3">
-                                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                                    <div className="w-2 h-2 bg-red-600 rounded-full mt-2"></div>
                                     <span className="text-gray-700">Expert-led lectures to build strong theoretical understanding</span>
                                 </li>
                                 <li className="flex items-start space-x-3">
-                                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                                    <div className="w-2 h-2 bg-red-600 rounded-full mt-2"></div>
                                     <span className="text-gray-700">Live clinical demonstrations and case discussions</span>
                                 </li>
                                 <li className="flex items-start space-x-3">
-                                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                                    <div className="w-2 h-2 bg-red-600 rounded-full mt-2"></div>
                                     <span className="text-gray-700">Hands-on practice sessions on models and typodonts</span>
                                 </li>
                                 <li className="flex items-start space-x-3">
-                                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                                    <div className="w-2 h-2 bg-red-600 rounded-full mt-2"></div>
                                     <span className="text-gray-700">Opportunities to observe live patient treatments</span>
                                 </li>
                             </ul>
@@ -151,3 +151,5 @@ export default function TrainingPage() {
         </div>
     )
 }
+
+

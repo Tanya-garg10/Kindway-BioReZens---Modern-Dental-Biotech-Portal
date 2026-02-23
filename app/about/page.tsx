@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import type { Metadata } from 'next'
+import TeamCarousel from '@/components/TeamCarousel'
 
 export const metadata: Metadata = {
     title: 'About Us - Kindway BioReZens',
@@ -22,7 +23,7 @@ export default function AboutPage() {
     return (
         <div className="mt-20">
             {/* Hero Section */}
-            <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+            <section className="bg-gradient-to-r from-red-600 to-red-800 text-white py-20">
                 <div className="container-custom text-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">About Kindway BioReZens</h1>
                     <p className="text-xl max-w-3xl mx-auto opacity-90">
@@ -80,25 +81,17 @@ export default function AboutPage() {
             </section>
 
             {/* Team Section */}
-            <section className="section-padding">
+            <section className="section-padding bg-gray-50 dark:bg-slate-800">
                 <div className="container-custom">
                     <div className="text-center mb-12">
                         <span className="title-subhny">Our Team</span>
                         <h2 className="title-w3l mt-2">Executive Team & Advisors</h2>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                        {teamMembers.map((member, index) => (
-                            <div key={index} className="text-center">
-                                <div className="relative h-64 mb-4 rounded-xl overflow-hidden shadow-md">
-                                    <Image src={member.image} alt={member.name} fill className="object-cover" />
-                                </div>
-                                <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                                <p className="text-gray-600">{member.role}</p>
-                            </div>
-                        ))}
-                    </div>
+                    <TeamCarousel members={teamMembers} />
                 </div>
             </section>
         </div>
     )
 }
+
+

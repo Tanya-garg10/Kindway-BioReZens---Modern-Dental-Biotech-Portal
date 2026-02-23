@@ -108,7 +108,7 @@ export default function CataloguePage() {
     return (
         <div className="mt-20">
             {/* Hero */}
-            <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+            <section className="bg-gradient-to-r from-red-600 to-red-800 text-white py-20">
                 <div className="container-custom text-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Product Catalogue</h1>
                     <p className="text-xl max-w-3xl mx-auto opacity-90 mb-8">
@@ -135,7 +135,7 @@ export default function CataloguePage() {
                             <a
                                 key={category.id}
                                 href={`#category-${category.id}`}
-                                className="px-6 py-2 rounded-full bg-white text-gray-700 hover:bg-blue-600 hover:text-white transition-colors shadow-md"
+                                className="px-6 py-2 rounded-full bg-white text-gray-700 hover:bg-red-600 hover:text-white transition-colors shadow-md"
                             >
                                 {category.name}
                             </a>
@@ -163,7 +163,7 @@ export default function CataloguePage() {
                                         <div className="md:w-2/3 p-6">
                                             <div className="flex items-start justify-between mb-2">
                                                 <h3 className="text-2xl font-bold text-gray-900">{product.name}</h3>
-                                                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
+                                                <span className="px-3 py-1 bg-red-100 text-red-800 text-sm rounded-full">
                                                     {product.code}
                                                 </span>
                                             </div>
@@ -177,7 +177,7 @@ export default function CataloguePage() {
                                                 <ul className="space-y-1">
                                                     {product.features.map((feature, i) => (
                                                         <li key={i} className="flex items-center gap-2 text-sm text-gray-600">
-                                                            <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                                                            <div className="w-2 h-2 bg-red-600 rounded-full"></div>
                                                             <span>{feature}</span>
                                                         </li>
                                                     ))}
@@ -213,8 +213,8 @@ export default function CataloguePage() {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         {['ISO 13485', 'CE Marked', 'FDA Approved', 'GMP Certified'].map((cert) => (
                             <div key={cert} className="bg-white rounded-xl shadow-md p-6 text-center">
-                                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <span className="text-2xl font-bold text-blue-600">✓</span>
+                                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <span className="text-2xl font-bold text-red-600">✓</span>
                                 </div>
                                 <p className="font-semibold text-gray-900">{cert}</p>
                             </div>
@@ -224,7 +224,7 @@ export default function CataloguePage() {
             </section>
 
             {/* Bulk Orders */}
-            <section className="section-padding bg-blue-600 text-white">
+            <section className="section-padding bg-red-600 text-white">
                 <div className="container-custom">
                     <div className="max-w-4xl mx-auto text-center">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -261,3 +261,5 @@ export default function CataloguePage() {
         </div>
     )
 }
+
+

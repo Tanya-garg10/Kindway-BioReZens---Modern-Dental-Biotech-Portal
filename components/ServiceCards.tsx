@@ -28,8 +28,8 @@ export default function ServiceCards() {
                             key={index}
                             className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
                         >
-                            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                                <service.icon className="w-8 h-8 text-blue-600" />
+                            <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                                <service.icon className="w-8 h-8 text-red-600" />
                             </div>
                             <h3 className="text-xl font-semibold mb-4 text-gray-900">
                                 {service.title}
@@ -44,3 +44,4 @@ export default function ServiceCards() {
         </section>
     )
 }
+

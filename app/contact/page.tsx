@@ -28,7 +28,7 @@ export default function ContactPage() {
     return (
         <div className="mt-20">
             {/* Hero */}
-            <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+            <section className="bg-gradient-to-r from-red-600 to-red-800 text-white py-20">
                 <div className="container-custom text-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Contact Us</h1>
                     <p className="text-xl max-w-3xl mx-auto opacity-90">
@@ -57,7 +57,7 @@ export default function ContactPage() {
                                     onChange={handleChange}
                                     placeholder="Your Name*"
                                     required
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent bg-white dark:bg-slate-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
                                 />
                                 <input
                                     type="email"
@@ -66,7 +66,7 @@ export default function ContactPage() {
                                     onChange={handleChange}
                                     placeholder="Your Email*"
                                     required
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent bg-white dark:bg-slate-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
                                 />
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -77,7 +77,7 @@ export default function ContactPage() {
                                     onChange={handleChange}
                                     placeholder="Subject*"
                                     required
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent bg-white dark:bg-slate-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
                                 />
                                 <input
                                     type="url"
@@ -85,7 +85,7 @@ export default function ContactPage() {
                                     value={formData.website}
                                     onChange={handleChange}
                                     placeholder="Website URL"
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent bg-white dark:bg-slate-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
                                 />
                             </div>
                             <textarea
@@ -95,7 +95,7 @@ export default function ContactPage() {
                                 placeholder="Type your message here*"
                                 required
                                 rows={6}
-                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent bg-white dark:bg-slate-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
                             />
                             <button type="submit" className="btn-primary w-full md:w-auto">
                                 Send Message
@@ -114,8 +114,8 @@ export default function ContactPage() {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="bg-white p-6 rounded-xl shadow-md">
-                            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                <MapPin className="w-6 h-6 text-blue-600" />
+                            <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                                <MapPin className="w-6 h-6 text-red-600" />
                             </div>
                             <h3 className="text-xl font-semibold mb-2">Office Location</h3>
                             <p className="text-gray-600">
@@ -123,20 +123,20 @@ export default function ContactPage() {
                             </p>
                         </div>
                         <div className="bg-white p-6 rounded-xl shadow-md">
-                            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                <Phone className="w-6 h-6 text-blue-600" />
+                            <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                                <Phone className="w-6 h-6 text-red-600" />
                             </div>
                             <h3 className="text-xl font-semibold mb-2">Call & WhatsApp Us</h3>
-                            <a href="tel:+919151161267" className="text-blue-600 hover:underline">
+                            <a href="tel:+919151161267" className="text-red-600 hover:underline">
                                 +91-9151161267
                             </a>
                         </div>
                         <div className="bg-white p-6 rounded-xl shadow-md">
-                            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                <Mail className="w-6 h-6 text-blue-600" />
+                            <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                                <Mail className="w-6 h-6 text-red-600" />
                             </div>
                             <h3 className="text-xl font-semibold mb-2">Email Us</h3>
-                            <a href="mailto:kindwaybiorezens@gmail.com" className="text-blue-600 hover:underline">
+                            <a href="mailto:kindwaybiorezens@gmail.com" className="text-red-600 hover:underline">
                                 kindwaybiorezens@gmail.com
                             </a>
                         </div>
@@ -163,3 +163,5 @@ export default function ContactPage() {
         </div>
     )
 }
+
+

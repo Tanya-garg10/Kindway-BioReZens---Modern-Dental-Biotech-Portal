@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function CTASection() {
     return (
-        <section className="section-padding bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <section className="section-padding bg-gradient-to-r from-red-600 to-red-800 text-white">
             <div className="container-custom text-center">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                     Ready to Transform Your Dental Practice?
@@ -25,3 +25,4 @@ export default function CTASection() {
         </section>
     )
 }
+

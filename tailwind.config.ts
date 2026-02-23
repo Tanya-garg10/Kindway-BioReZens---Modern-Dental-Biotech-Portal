@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
+    darkMode: 'class',
     content: [
         "./pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,18 +11,19 @@ export default {
         extend: {
             colors: {
                 primary: {
-                    DEFAULT: '#2563eb',
-                    dark: '#1e40af',
+                    DEFAULT: '#F42A2A',
+                    dark: '#dc2626',
                 },
                 secondary: {
-                    DEFAULT: '#10b981',
+                    DEFAULT: '#ef4444',
                 },
                 accent: {
-                    DEFAULT: '#f59e0b',
+                    DEFAULT: '#f87171',
                 },
             },
             fontFamily: {
-                sans: ['var(--font-quicksand)', 'system-ui', 'sans-serif'],
+                sans: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
+                heading: ['var(--font-playfair)', 'Georgia', 'serif'],
             },
         },
     },

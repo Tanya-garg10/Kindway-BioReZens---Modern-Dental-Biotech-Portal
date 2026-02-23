@@ -117,7 +117,7 @@ export default function TestimonialsPage() {
     return (
         <div className="mt-20">
             {/* Hero */}
-            <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+            <section className="bg-gradient-to-r from-red-600 to-red-800 text-white py-20">
                 <div className="container-custom text-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Testimonials & Reviews</h1>
                     <p className="text-xl max-w-3xl mx-auto opacity-90">
@@ -139,15 +139,15 @@ export default function TestimonialsPage() {
                         <p className="text-xl text-gray-600 mb-4">Based on 150+ reviews</p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                             <div>
-                                <p className="text-3xl font-bold text-blue-600">95%</p>
+                                <p className="text-3xl font-bold text-red-600">95%</p>
                                 <p className="text-gray-600">Would Recommend</p>
                             </div>
                             <div>
-                                <p className="text-3xl font-bold text-blue-600">1160+</p>
+                                <p className="text-3xl font-bold text-red-600">1160+</p>
                                 <p className="text-gray-600">Students Trained</p>
                             </div>
                             <div>
-                                <p className="text-3xl font-bold text-blue-600">98%</p>
+                                <p className="text-3xl font-bold text-red-600">98%</p>
                                 <p className="text-gray-600">Satisfaction Rate</p>
                             </div>
                         </div>
@@ -165,7 +165,7 @@ export default function TestimonialsPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {dentistTestimonials.map((testimonial) => (
                             <div key={testimonial.id} className="bg-white rounded-xl shadow-lg p-6 card-hover relative">
-                                <Quote className="absolute top-4 right-4 w-12 h-12 text-blue-100" />
+                                <Quote className="absolute top-4 right-4 w-12 h-12 text-red-100" />
                                 <div className="flex items-center gap-4 mb-4">
                                     <div className="relative w-16 h-16 rounded-full overflow-hidden">
                                         <Image src={testimonial.image} alt={testimonial.name} fill className="object-cover" />
@@ -183,7 +183,7 @@ export default function TestimonialsPage() {
                                 </div>
                                 <p className="text-gray-700 mb-4 leading-relaxed">{testimonial.text}</p>
                                 <div className="border-t pt-4">
-                                    <p className="text-sm font-medium text-blue-600">{testimonial.course}</p>
+                                    <p className="text-sm font-medium text-red-600">{testimonial.course}</p>
                                     <p className="text-xs text-gray-500">{testimonial.date}</p>
                                 </div>
                             </div>
@@ -243,7 +243,7 @@ export default function TestimonialsPage() {
             </section>
 
             {/* CTA */}
-            <section className="section-padding bg-blue-600 text-white">
+            <section className="section-padding bg-red-600 text-white">
                 <div className="container-custom text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">
                         Join Our Success Stories
@@ -264,3 +264,5 @@ export default function TestimonialsPage() {
         </div>
     )
 }
+
+

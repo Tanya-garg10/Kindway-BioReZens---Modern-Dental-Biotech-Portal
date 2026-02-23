@@ -108,7 +108,7 @@ export default function BlogPage() {
     return (
         <div className="mt-20">
             {/* Hero */}
-            <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+            <section className="bg-gradient-to-r from-red-600 to-red-800 text-white py-20">
                 <div className="container-custom text-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Educational Blog</h1>
                     <p className="text-xl max-w-3xl mx-auto opacity-90">
@@ -124,7 +124,7 @@ export default function BlogPage() {
                         {categories.map((category) => (
                             <button
                                 key={category}
-                                className="px-6 py-2 rounded-full bg-white text-gray-700 hover:bg-blue-600 hover:text-white transition-colors shadow-md"
+                                className="px-6 py-2 rounded-full bg-white text-gray-700 hover:bg-red-600 hover:text-white transition-colors shadow-md"
                             >
                                 {category}
                             </button>
@@ -138,7 +138,7 @@ export default function BlogPage() {
                                 <div className="relative h-64">
                                     <Image src={post.image} alt={post.title} fill className="object-cover" />
                                     <div className="absolute top-4 left-4">
-                                        <span className="px-3 py-1 bg-blue-600 text-white text-sm rounded-full">
+                                        <span className="px-3 py-1 bg-red-600 text-white text-sm rounded-full">
                                             {post.category}
                                         </span>
                                     </div>
@@ -152,7 +152,7 @@ export default function BlogPage() {
                                         <span>•</span>
                                         <span>{post.readTime}</span>
                                     </div>
-                                    <h2 className="text-xl font-semibold mb-3 text-gray-900 hover:text-blue-600 transition-colors">
+                                    <h2 className="text-xl font-semibold mb-3 text-gray-900 hover:text-red-600 transition-colors">
                                         <Link href={`/blog/${post.id}`}>{post.title}</Link>
                                     </h2>
                                     <p className="text-gray-600 mb-4 leading-relaxed">{post.excerpt}</p>
@@ -163,7 +163,7 @@ export default function BlogPage() {
                                         </div>
                                         <Link
                                             href={`/blog/${post.id}`}
-                                            className="text-blue-600 hover:text-blue-700 font-medium flex items-center gap-1"
+                                            className="text-red-600 hover:text-red-700 font-medium flex items-center gap-1"
                                         >
                                             Read More <ArrowRight className="w-4 h-4" />
                                         </Link>
@@ -176,7 +176,7 @@ export default function BlogPage() {
             </section>
 
             {/* Newsletter */}
-            <section className="section-padding bg-blue-600 text-white">
+            <section className="section-padding bg-red-600 text-white">
                 <div className="container-custom text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">
                         Subscribe to Our Newsletter
@@ -200,3 +200,6 @@ export default function BlogPage() {
         </div>
     )
 }
+
+
+

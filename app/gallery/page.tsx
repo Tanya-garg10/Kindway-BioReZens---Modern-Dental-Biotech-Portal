@@ -14,7 +14,7 @@ export default function GalleryPage() {
     return (
         <div className="mt-20">
             {/* Hero */}
-            <section className="bg-gradient-to-r from-purple-600 to-purple-800 text-white py-20">
+            <section className="bg-gradient-to-r from-red-600 to-red-800 text-white py-20">
                 <div className="container-custom text-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Gallery</h1>
                     <p className="text-xl max-w-3xl mx-auto opacity-90">
@@ -76,3 +76,4 @@ export default function GalleryPage() {
         </div>
     )
 }
+

@@ -30,7 +30,7 @@ export default function Statistics() {
     }, [])
 
     return (
-        <section ref={sectionRef} className="section-padding bg-blue-600 text-white">
+        <section ref={sectionRef} className="section-padding bg-red-600 text-white">
             <div className="container-custom">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
                     {stats.map((stat, index) => (
@@ -40,7 +40,7 @@ export default function Statistics() {
                                 <span className="text-4xl">+</span>
                             </div>
                             <h3 className="text-2xl font-semibold mb-2">{stat.label}</h3>
-                            <p className="text-blue-100">{stat.description}</p>
+                            <p className="text-red-100">{stat.description}</p>
                         </div>
                     ))}
                 </div>
@@ -73,3 +73,4 @@ function Counter({ target }: { target: number }) {
 
     return <>{count}</>
 }
+

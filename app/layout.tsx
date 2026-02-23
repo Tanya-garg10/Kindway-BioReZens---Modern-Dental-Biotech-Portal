@@ -1,14 +1,22 @@
 import type { Metadata } from 'next'
-import { Quicksand } from 'next/font/google'
+import { Poppins, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ContactWidget from '@/components/ContactWidget'
 
-const quicksand = Quicksand({
+const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-quicksand'
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-poppins',
+  display: 'swap',
+})
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800', '900'],
+  variable: '--font-playfair',
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -38,7 +46,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${quicksand.variable} font-sans antialiased`} suppressHydrationWarning>
+      <body className={`${poppins.variable} ${playfair.variable} font-sans antialiased`} suppressHydrationWarning>
         <Header />
         <main className="min-h-screen">
           {children}
